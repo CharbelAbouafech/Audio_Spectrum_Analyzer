@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" -L "xpm" --snapshot "ssm2603_init_tb_behav" "xil_defaultlib.ssm2603_init_tb" -log "elaborate.log" 

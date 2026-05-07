@@ -1,0 +1,23 @@
+0.7
+2020.2
+May  7 2023
+15:24:31
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.gen/sources_1/ip/xfft_0/sim/xfft_0.vhd,1778024768,vhdl,,,,xfft_0,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/bin_buffer_tb.vhd,1778163755,vhdl2008,,,,bin_buffer_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd,1778165605,vhdl2008,,,,fft_wrapper_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/i2c_master_tb.vhd,1778071595,vhdl2008,,,,i2c_master_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/i2s_receiver_tb.vhd,1778071600,vhdl2008,,,,i2s_receiver_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/mag_calc_tb.vhd,1778071604,vhdl2008,,,,mag_calc_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/ssm2603_init_tb.vhd,1778071748,vhdl2008,,,,ssm2603_init_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/top_tb.vhd,1778165035,vhdl2008,,,,top_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/uart_tb.vhd,1778165014,vhdl2008,,,,uart_tb,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/UART_transmitter.vhd,1777695979,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/uart_tb.vhd,,,uart_tx,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/buffer.vhd,1778023117,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/spectrum_uart_top.vhd,,,bin_buffer,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/fft.vhd,1778026850,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd,,,fft_wrapper,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/i2c_master.vhd,1777695979,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/ssm2603_init.vhd,,,i2c_master,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/i2s_receiver.vhd,1777695979,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/top.vhd,,,i2s_receiver,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/mag_calc.vhd,1777695979,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/spectrum_core.vhd,,,magnitude_calc,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/spectrum_core.vhd,1777695979,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/spectrum_uart_top.vhd,,,spectrum_core,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/spectrum_uart_top.vhd,1778028868,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/top.vhd,,,spectrum_uart_top,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/ssm2603_init.vhd,1777785850,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/top.vhd,,,ssm2603_init,,,,,,,,
+C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sources_1/new/top.vhd,1778032655,vhdl2008,C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/top_tb.vhd,,,top,,,,,,,,

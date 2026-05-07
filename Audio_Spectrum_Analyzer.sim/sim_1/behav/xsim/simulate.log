@@ -1,0 +1,12 @@
+Time resolution is 1 ps
+Note: T1: waiting for config handshake
+Time: 12 ns  Iteration: 0  Process: /fft_wrapper_tb/stim  File: C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd
+Note: T2/T3: streaming 1024 samples
+Time: 28 ns  Iteration: 2  Process: /fft_wrapper_tb/stim  File: C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd
+Note: T4/T5: collecting FFT output
+Time: 36 ns  Iteration: 2  Process: /fft_wrapper_tb/stim  File: C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd
+Note: *** fft_wrapper: ALL TESTS PASSED ***
+Time: 33724 ns  Iteration: 0  Process: /fft_wrapper_tb/stim  File: C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd
+Failure: *** fft_wrapper: SIMULATION PASSED ***
+Time: 33729 ns  Iteration: 0  Process: /fft_wrapper_tb/stim  File: C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd
+$finish called at time : 33729 ns : File "C:/Users/Char/Documents/ECE_524/Audio_Spectrum_Analyzer/Audio_Spectrum_Analyzer.srcs/sim_1/new/fft_wrapper_tb.vhd" Line 185

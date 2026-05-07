@@ -1,0 +1,150 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Wed May  6 05:57:34 2026
+| Host         : Charbel running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z010
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    72 |
+|    Minimum number of control sets                        |    72 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   158 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    72 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     5 |
+| >= 8 to < 10       |     6 |
+| >= 10 to < 12      |     6 |
+| >= 12 to < 14      |    17 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    33 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             238 |           72 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              73 |           24 |
+| Yes          | No                    | No                     |            4865 |         1056 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             346 |          120 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|    Clock Signal    |                                                                           Enable Signal                                                                          |                       Set/Reset Signal                       | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/has_scale_pipelining.has_tw_scale_reg.tw_scale_reg_ce_2                                                   |                                                              |                3 |              3 |         1.00 |
+|  clk_125_IBUF_BUFG | u_codec_init/u_i2c/reg_idx_reg[3][0]                                                                                                                             | p_1_in0                                                      |                1 |              4 |         4.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/has_scale_pipelining.has_tw_scale_reg.tw_scale_reg_ce_1                                                   |                                                              |                2 |              4 |         2.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/E[0]                                                                                                                                         | p_1_in0                                                      |                2 |              5 |         2.50 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/has_scale_pipelining.has_tw_scale_reg.tw_scale_reg_ce_0                                                   |                                                              |                3 |              5 |         1.67 |
+|  clk_125_IBUF_BUFG | u_i2s/bit_cnt                                                                                                                                                    | u_i2s/clear                                                  |                2 |              6 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/E[0]                                                                                                      |                                                              |                1 |              7 |         7.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/has_scale_pipelining.has_tw_scale_reg.tw_scale_reg_ce                                                     |                                                              |                2 |              7 |         3.50 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_1[0]                                                         |                                                              |                1 |              7 |         7.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/config_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                          |                                                              |                2 |              7 |         3.50 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/tx_state_reg[0][0]                                                                                                                           | p_1_in0                                                      |                4 |              8 |         2.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/tx_state_reg[4][0]                                                                                                                           | p_1_in0                                                      |                2 |              8 |         4.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_uart_tx/E[0]                                                                                                                                        | p_1_in0                                                      |                2 |              8 |         4.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_uart_tx/shreg                                                                                                                                       | p_1_in0                                                      |                2 |              8 |         4.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_uart_tx/tx_state_reg[0]_0[0]                                                                                                                        | p_1_in0                                                      |                3 |              8 |         2.67 |
+|  clk_125_IBUF_BUFG | u_codec_init/u_i2c/byte_idx[1]_i_1_n_0                                                                                                                           |                                                              |                4 |              9 |         2.25 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/wr_idx_v                                                                                                                                     | u_spectrum/u_core/u_mag/SR[0]                                |                3 |             10 |         3.33 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/sample_cnt[9]_i_1__0_n_0                                                                                                                 | p_1_in0                                                      |                3 |             10 |         3.33 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/FSM_sequential_frm_state_reg[1][0]                                                                                                       | p_1_in0                                                      |                3 |             10 |         3.33 |
+|  clk_125_IBUF_BUFG | u_codec_init/u_i2c/timer[9]_i_1_n_0                                                                                                                              | p_1_in0                                                      |                5 |             10 |         2.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/symbols_out_remaining[9]_i_1_n_0                                                                          |                                                              |                3 |             10 |         3.33 |
+|  clk_125_IBUF_BUFG | u_codec_init/u_i2c/data_r[12]_i_1_n_0                                                                                                                            |                                                              |                2 |             11 |         5.50 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_7                                                            |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/xfft_inst/non_floating_point.arch_d.xfft_inst/FLOW/proc0_counter/load_cnt_ce                                          |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/CE                                                                                                        |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_6                                                            |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep_1                                                               |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_8                                                            |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep_2                                                               |                                                              |                5 |             12 |         2.40 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_3                                                            |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_5                                                            |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_2                                                            |                                                              |                5 |             12 |         2.40 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/gen_ce_non_real_time.ce_predicted_reg_rep__0_4                                                            |                                                              |                4 |             12 |         3.00 |
+|  clk_125_IBUF_BUFG | led_OBUF[1]                                                                                                                                                      | u_spectrum/u_core/u_mag/valid_out_reg_14                     |                7 |             12 |         1.71 |
+|  clk_125_IBUF_BUFG | led_OBUF[3]                                                                                                                                                      | u_spectrum/reset_reg_0                                       |                7 |             12 |         1.71 |
+|  clk_125_IBUF_BUFG | led_OBUF[2]                                                                                                                                                      | u_spectrum/reset_reg                                         |                7 |             12 |         1.71 |
+|  clk_125_IBUF_BUFG | u_spectrum/uart_done_led_hold_reg[0]                                                                                                                             | p_1_in0                                                      |                5 |             13 |         2.60 |
+|  clk_125_IBUF_BUFG | u_spectrum/uart_start_led_hold_reg[0]                                                                                                                            | p_1_in0                                                      |                4 |             13 |         3.25 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_mag/mag_led_hold_reg[0]                                                                                                                      | p_1_in0                                                      |                5 |             13 |         2.60 |
+|  clk_125_IBUF_BUFG | u_spectrum/scaled_reg[15]_i_1_n_0                                                                                                                                | p_1_in0                                                      |                6 |             16 |         2.67 |
+|  clk_125_IBUF_BUFG | u_i2s/E[0]                                                                                                                                                       | p_1_in0                                                      |                6 |             16 |         2.67 |
+|  clk_125_IBUF_BUFG | u_i2s/left_reg                                                                                                                                                   | p_1_in0                                                      |                5 |             16 |         3.20 |
+|  clk_125_IBUF_BUFG | u_i2s/shift_0                                                                                                                                                    | u_i2s/clear                                                  |                4 |             16 |         4.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/in_tdata[15]_i_1_n_0                                                                                                                     |                                                              |                4 |             16 |         4.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/CEP                                                                                                                                                   | p_1_in0                                                      |                5 |             18 |         3.60 |
+|  clk_125_IBUF_BUFG | reset_cnt[0]_i_1_n_0                                                                                                                                             |                                                              |                6 |             21 |         3.50 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/data_out_channel/gen_non_real_time.fifo/fifo0/rd_valid_2_reg_0                                            | p_1_in0                                                      |                7 |             22 |         3.14 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/gen_non_real_time.gen_has_skid_buffer.data_out_20 |                                                              |                3 |             24 |         8.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/gen_non_real_time.gen_has_skid_buffer.data_out_10 |                                                              |                4 |             24 |         6.00 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/data_in_channel_fifo/gen_non_real_time.data_in_fifo_pt1/wr_enable                                         |                                                              |                3 |             24 |         8.00 |
+|  clk_125_IBUF_BUFG | u_codec_init/u_i2c/E[0]                                                                                                                                          | p_1_in0                                                      |                5 |             24 |         4.80 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_384_447_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_0_63_3_5_i_1_n_0                                                                                                                    |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_128_191_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_192_255_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_320_383_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_256_319_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_64_127_3_5_i_1_n_0                                                                                                                  |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_448_511_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_320_383_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_64_127_3_5_i_1_n_0                                                                                                                  |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_384_447_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_256_319_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_192_255_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_128_191_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram0_reg_448_511_3_5_i_1_n_0                                                                                                                 |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_buffer/ram1_reg_0_63_3_5_i_1_n_0                                                                                                                    |                                                              |                8 |             30 |         3.75 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/ce_w2c                                                                                                    | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/SR[0] |               15 |             48 |         3.20 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/data_out_channel/data_out_fifo_write                                                                      |                                                              |                7 |             49 |         7.00 |
+|  clk_125_IBUF_BUFG |                                                                                                                                                                  | p_1_in0                                                      |               24 |             73 |         3.04 |
+|  clk_125_IBUF_BUFG |                                                                                                                                                                  |                                                              |               72 |            238 |         3.31 |
+|  clk_125_IBUF_BUFG | u_spectrum/u_core/u_fft/uut_fft/U0/i_synth/axi_wrapper/ce_w2c                                                                                                    |                                                              |              972 |           5586 |         5.75 |
++--------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------+------------------+----------------+--------------+
+
+
