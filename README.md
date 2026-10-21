@@ -574,8 +574,6 @@ Byte  Field          Value / Notes
 
 Total: **520 bytes** per packet.
 
-Wait — recalculating:
-
 ```
 2 (header) + 1 (seq) + 2 (count) + 2×256 (payload) + 1 (checksum)
 = 2 + 1 + 2 + 512 + 1 = 518 bytes
@@ -833,13 +831,7 @@ Option 2 was chosen: increase resolution (BIN_STRIDE 4→2, SEND_BINS 128→256)
 
 **Fix:** Changed BIN_STRIDE from 4 to 2, SEND_BINS from 128 to 256, BAUD_RATE from 115,200 to 312,500 in `top.vhd` and `spectrum_analyzer.py`. Result: `dropped=0` on all subsequent packets.
 
-### Bug 5: Python Baud Rate — Misunderstanding about Device Manager
-
-**Symptom / question:** The user asked whether the Windows Device Manager baud rate setting (showing 9600 by default) needed to be changed to 312,500.
-
-**Answer:** No. When pyserial opens a COM port, it programs the FT232R UART chip with the baud rate specified in the `serial.Serial()` constructor, overriding whatever the Device Manager shows. Device Manager only shows the default/last-used setting. pyserial's `baudrate=312500` argument is what actually sets the hardware register.
-
-### Bug 6: 24kHz Label Not Visible on Plot
+### Bug 4: 24kHz Label Not Visible on Plot
 
 **Symptom:** The x-axis ended at approximately 22–23k. No "24k" label visible.
 
